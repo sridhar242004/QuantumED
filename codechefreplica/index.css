@@ -1,0 +1,229 @@
+body {
+    background: linear-gradient(45deg, #FFD700, #FF6347, #8A2BE2, #00FA9A);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    transition: transform 0.3s ease-in-out; /* Ease in and out effect */
+    transform-style: preserve-3d; /* Apply 3D transformations */
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #FFD700, #8A2BE2);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform-style: preserve-3d; /* Apply 3D transformations */
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FF6347;
+    transition: width 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    transform: translateY(-3px) rotateX(10deg) rotateY(10deg); /* Apply 3D rotation on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover::after {
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    transform-style: preserve-3d; /* Apply 3D transformations */
+}
+
+section:hover {
+    transform: translateY(-5px) rotateX(5deg) rotateY(5deg); /* Apply 3D rotation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 1.1em;
+    margin: 0;
+    color: #444;
+}
+
+.job {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.job:hover {
+    background-color: #f5f5f5; /* Change background color on hover */
+}
+
+.apply-button {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #FFD700, #8A2BE2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, border-color 0.3s; /* Add transition for border color */
+    display: block;
+    animation: pulseAnimation 1s infinite alternate;
+}
+
+.apply-button:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    border-color: #FF6347; /* Change border color on hover */
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.fade-in {
+    animation: fadeInAnimation 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial box-shadow */
+}
+
+img:hover {
+    transform: scale(1.1) rotateZ(5deg); /* Apply 3D rotation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase box-shadow on hover */
+}
+
+a:hover {
+    color: #FF6347;
+    text-decoration: underline;
+}
+
+/* Text Gradient Animation */
+.gradient-text {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradientAnimation 10s ease infinite;
+}
+
+@keyframes textGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover Flip Effect for Images */
+.flip-container {
+    perspective: 1000px;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 200px;
+    height: 200px;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}

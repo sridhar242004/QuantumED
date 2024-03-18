@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(45deg, #FFD700, #FF6347, #8A2BE2, #00FA9A);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #FFD700, #8A2BE2);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.live-class {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-class-info {
+    flex: 1;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.join-button {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #FFD700, #8A2BE2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.join-button:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+}
+
+.internship {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.internship-info {
+    flex: 1;
+}

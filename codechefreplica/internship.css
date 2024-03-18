@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(45deg, #FFD700, #FF6347, #8A2BE2, #00FA9A);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #FFD700, #8A2BE2);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.job, .internship {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.job h3, .internship h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.job p, .internship p {
+    font-size: 1em;
+    margin: 0 0 10px 0;
+}
+
+.apply-button {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg, #FFD700, #8A2BE2);
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.apply-button:hover {
+    background: linear-gradient(45deg, #FF6347, #00FA9A);
+}
+
+.internship img {
+    max-width: 100px;
+}
